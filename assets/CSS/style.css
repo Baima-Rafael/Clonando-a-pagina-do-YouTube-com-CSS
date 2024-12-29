@@ -1,0 +1,315 @@
+@import url(../CSS/reset.css);
+
+body{
+    background-color: rgba(249, 249, 249, 1);
+    width: 90rem;
+    height: 64rem;
+    position: absolute;
+}
+
+/*Menu Display*/
+
+.menu-container {
+    background-color: rgba(255, 255, 255, 1);
+    width: 90rem; /* 1440px */
+    height: 3.5rem; /* 56px */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+    
+.left {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+    
+.left #LinesMenu {
+    display: inline-block;
+}
+    
+.left #LogoYouTube {
+    margin-left: rem;
+    display: inline-block;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*margin: 0.5rem 0;*/
+}
+    
+.center #SearchMag {
+    width: 3.5625rem; /* 57px */
+    height: 2.5rem; /* 40px */
+    border: 1px solid rgba(204, 204, 204, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+.center #ImagemMag {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 7px auto;
+}
+    
+.center #SearchInput {
+    width: 21.75rem; /* 348px */
+    height: 2.5rem; /* 40px */
+    color: rgba(248, 248, 248, 1);
+    border: 1px solid rgba(204, 204, 204, 1);
+    display: inline-block;
+    padding-left: 0.75rem;
+}
+    
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 8.125rem; /* 130px */
+    height: 2.125rem; /* 34px */
+    margin-right: 1rem;
+}
+    
+.right #Video,
+.right #Bell {
+    width: 1.5rem; /* 24px */
+    height: 1.5rem; /* 24px */
+    display: inline-block;
+}
+    
+.right #Avatar {
+    width: 2.125rem; /* 34px */
+    height: 2.125rem; /* 34px */
+    background-image: url(../Imagens/pica_pau-4176979652.png);
+    background-size: cover;
+    border-radius: 50%; /* Para tornar a imagem redonda */
+    display: inline-block;
+}
+
+/*End Menu Display*/
+
+/*Menu Watcher*/
+
+.watcher-container {
+    display: flex;
+    flex-direction: column;
+    width: 59.5rem;
+    height: 46.625rem;
+    margin-left: 4.6875rem;
+    margin-top: 1.75rem;
+}
+
+.watcher {
+    width: 100%;
+    height: 33.5625rem;
+    background-image: url(../Imagens/image\ 2.png);
+    background-size: cover;
+}
+
+.watcher-name {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 1rem 0;
+}
+
+.watcher-actions {
+    display: flex;
+    align-items: center;
+    gap: 2.625rem;
+    margin-bottom: 1rem;
+}
+
+.watcher-actions #Channel-Infos {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 10rem;
+    height: 2.625rem;
+}
+
+.watcher-actions #Channel-Infos #Channel-Img {
+    width: 2.625rem;
+    height: 2.625rem;
+    border-radius: 50%;
+    background-image: url(../Imagens/Channel\ Avatar.png);
+    background-size: cover;
+}
+
+.watcher-actions #Channel-Infos #Channel-NameScribers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3125rem;
+}
+
+.watcher-actions #Channel-Infos #ChannelName {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.watcher-actions #Channel-Infos #ChannelScribers {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.watcher-actions #Subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9.9375rem;
+    height: 2.5rem;
+    background-color: red;
+    text-align: center;
+}
+
+.watcher-actions #Subscribe #TextSubscribe {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+}
+
+.watcher-actions #Like,
+.watcher-actions #Dislike,
+.watcher-actions #Share,
+.watcher-actions #Download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.watcher-actions #Like {
+    width: 4rem;
+    height: 1.5rem;
+}
+
+.watcher-actions #Like #LikeImg {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(../Imagens/thumbs-up.png);
+    background-size: cover;
+}
+
+.watcher-actions #Like #LikeNumbs {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.watcher-actions #Dislike {
+    width: 6.5rem;
+    height: 1.5rem;
+}
+
+.watcher-actions #Dislike #DislikeImg {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(../Imagens/thumbs-down.png);
+    background-size: cover;
+}
+
+.watcher-actions #Dislike #DislikeWrite {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.watcher-actions #Share {
+    width: 7.2rem;
+    height: 1.5rem;
+}
+
+.watcher-actions #Share #ShareImg {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(../Imagens/share-2.png);
+    background-size: cover;
+}
+
+.watcher-actions #Share #ShareWrite {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.watcher-actions #Download {
+    width: 7.2rem;
+    height: 1.5rem;
+}
+
+.watcher-actions #Download #DownloadImg {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(../Imagens/download.png);
+    background-size: cover;
+}
+
+.watcher-actions #Download #DownloadWrite {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.watcher-container #FirstLine,
+.watcher-container #SecondLine {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 0.875rem;
+    width: auto;
+}
+
+.watcher-container #SecondLine {
+    width: 32rem;
+    margin-top: 1rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+/*End Menu Watcher*/
+
+/*Menu Sidebar*/
+
+.side-bar-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 23.25rem;
+    height: 59rem;
+    margin-top: 1.75rem;
+    margin-left: 1.57rem;
+    position: absolute;
+    right: 1.25rem;
+    top: 3.5rem;
+}
+
+.generic-video{
+    width: 10rem;
+    height: 5.625rem;
+    background-image: url(../Imagens/Thumb.png);
+    background-size: cover;
+}
+
+.generic-infos{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 12.25rem;
+    height: auto;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-left: 11.25rem;
+}
+
+.generic-name{
+    font-weight: bold;
+}
+
+/*End Menu Sidebar*/
